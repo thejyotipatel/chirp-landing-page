@@ -1,0 +1,43 @@
+/* styling */
+.button {
+  outline: none;
+  border: none;
+  transition: $ts-400;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.container {
+  $max-width: 1210px;
+  $padding: 1rem;
+  width: calc(min(1210px, 95%));
+  margin-inline: auto;
+}
+
+/* media querry */
+@media (min-width: 50em) {
+}
+
+/* Hover on desktop and revmove on mobile */
+// @media (hover: hover) {
+// }
+
+button {
+  border-radius: $btn-radius;
+  padding: $size-100 $size-200;
+  border: 1px solid;
+  font-family: inherit;
+  cursor: pointer;
+  :hover {
+    border-color: #646cff;
+  }
+  :focus,
+  :focus-visible {
+    outline: 4px auto blue;
+  }
+}

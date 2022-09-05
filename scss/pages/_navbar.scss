@@ -1,0 +1,12 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: $size-200;
+  .btns {
+    .nav-btn {
+      background-color: transparent;
+      text-transform: capitalize;
+    }
+  }
+}

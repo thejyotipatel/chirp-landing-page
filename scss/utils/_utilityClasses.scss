@@ -1,0 +1,78 @@
+/* utility classes */
+
+/* color */
+.text-primery-100 {
+  color: $clr-primary-100;
+}
+
+.text-accent-100 {
+  color: $clr-accent-100;
+}
+
+.text-neutral-100 {
+  color: $clr-neutral-100;
+}
+
+/* background color */
+.bg-primery-100 {
+  background-color: $clr-primary-100;
+}
+
+.bg-accent-100 {
+  background-color: $clr-accent-100;
+}
+
+.bg-neutral-100 {
+  background-color: $clr-neutral-100;
+}
+
+/* font-weight */
+.fw-400 {
+  font-weight: $fw-400;
+}
+.fw-500 {
+  font-weight: $fw-500;
+}
+.fw-700 {
+  font-weight: $fw-700;
+}
+.fw-800 {
+  font-weight: $fw-800;
+}
+.fw-900 {
+  font-weight: $fw-900;
+}
+
+/* font-size */
+.fs-100 {
+  font-size: $fs-100;
+}
+.fs-200 {
+  font-size: $fs-200;
+}
+.fs-300 {
+  font-size: $fs-300;
+}
+.fs-400 {
+  font-size: $fs-400;
+}
+.fs-500 {
+  font-size: $fs-500;
+}
+.fs-600 {
+  font-size: $fs-600;
+}
+.fs-700 {
+  font-size: $fs-700;
+}
+.fs-800 {
+  font-size: $fs-800;
+}
+
+.ts-400 {
+  transition: $ts-400;
+}
+
+.btn-radius {
+  border-radius: $btn-radius;
+}
