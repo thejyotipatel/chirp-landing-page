@@ -38,10 +38,3 @@ button {
     font-weight: $fw-700;
   }
 }
-
-// flex styles
-@mixin flex-jsb-aic {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}

@@ -1,11 +1,12 @@
 footer {
   .footer-contant {
     padding: $size-400 0;
-    @include flex-jsb-aic;
+    @include flex-jSpace_between-aCenter;
+
     .nav-links {
       display: flex;
       ul {
-        @include flex-jsb-aic;
+        @include flex-jSpace_between-aCenter;
 
         li {
           font-size: $fs-200-1;
@@ -17,6 +18,15 @@ footer {
           padding: 0 $size-200;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 30em) {
+  footer {
+    .footer-contant {
+      @include flex-jSpace_between-aCenter($a: stretch);
+      flex-direction: column;
     }
   }
 }
