@@ -1,0 +1,22 @@
+footer {
+  .footer-contant {
+    padding: $size-400 0;
+    @include flex-jsb-aic;
+    .nav-links {
+      display: flex;
+      ul {
+        @include flex-jsb-aic;
+
+        li {
+          font-size: $fs-200-1;
+          font-weight: $fw-500;
+          color: $clr-neutral-100;
+          text-transform: capitalize;
+        }
+        li:not(li:last-child) {
+          padding: 0 $size-200;
+        }
+      }
+    }
+  }
+}

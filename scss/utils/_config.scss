@@ -1,11 +1,4 @@
 /* styling */
-.button {
-  outline: none;
-  border: none;
-  transition: $ts-400;
-  cursor: pointer;
-}
-
 a {
   text-decoration: none;
   text-transform: capitalize;
@@ -20,8 +13,8 @@ a {
 }
 
 /* media querry */
-@media (min-width: 50em) {
-}
+// @media (min-width: 50em) {
+// }
 
 /* Hover on desktop and revmove on mobile */
 // @media (hover: hover) {
@@ -29,15 +22,26 @@ a {
 
 button {
   border-radius: $btn-radius;
-  padding: $size-100 $size-200;
-  border: 1px solid;
   font-family: inherit;
+  outline: none;
+  border: none;
+  transition: $ts-400;
   cursor: pointer;
-  :hover {
-    border-color: #646cff;
+  cursor: pointer;
+}
+.logo {
+  // margin: $size-100 0;
+  h1 {
+    font-style: italic;
+    color: $clr-primary-100;
+    font-size: $fs-300;
+    font-weight: $fw-700;
   }
-  :focus,
-  :focus-visible {
-    outline: 4px auto blue;
-  }
+}
+
+// flex styles
+@mixin flex-jsb-aic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

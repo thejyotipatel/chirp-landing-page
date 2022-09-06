@@ -1,29 +1,79 @@
 /* utility classes */
 
-/* color */
-.text-primery-100 {
+/* text color */
+
+// text primary
+.text-primary-100 {
   color: $clr-primary-100;
 }
+.text-primary-200 {
+  color: $clr-primary-200;
+}
+.text-primary-300 {
+  color: $clr-primary-300;
+}
 
+// text accent
 .text-accent-100 {
   color: $clr-accent-100;
 }
+.text-accent-200 {
+  color: $clr-accent-200;
+}
+.text-accent-300 {
+  color: $clr-accent-300;
+}
+.text-accent-400 {
+  color: $clr-accent-400;
+}
+.text-accent-500 {
+  color: $clr-accent-500;
+}
 
+// text neutral
 .text-neutral-100 {
   color: $clr-neutral-100;
 }
-
-/* background color */
-.bg-primery-100 {
-  background-color: $clr-primary-100;
+.text-neutral-200 {
+  color: $clr-neutral-200;
 }
 
+/* background color */
+
+// background primary
+.bg-primary-100 {
+  background-color: $clr-primary-100;
+}
+.bg-primary-200 {
+  background-color: $clr-primary-200;
+}
+.bg-primary-300 {
+  background-color: $clr-primary-300;
+}
+
+// background accent
 .bg-accent-100 {
   background-color: $clr-accent-100;
 }
+.bg-accent-200 {
+  background-color: $clr-accent-200;
+}
+.bg-accent-300 {
+  background-color: $clr-accent-300;
+}
+.bg-accent-400 {
+  background-color: $clr-accent-400;
+}
+.bg-accent-500 {
+  background-color: $clr-accent-500;
+}
 
+// background neutral
 .bg-neutral-100 {
   background-color: $clr-neutral-100;
+}
+.bg-neutral-200 {
+  background-color: $clr-neutral-200;
 }
 
 /* font-weight */
@@ -75,4 +125,23 @@
 
 .btn-radius {
   border-radius: $btn-radius;
+}
+
+// container
+.container {
+  width: calc(min(92%, 1200px));
+  margin-inline: auto;
+  border: $d-border;
+}
+// sign in button
+
+.signin-btn {
+  background-color: $clr-primary-100;
+  padding: $size-100 $size-200;
+  box-shadow: $bxs-300;
+  font-size: $fs-200-1;
+  font-weight: $fw-500;
+  &:hover {
+    background-color: $clr-primary-200;
+  }
 }

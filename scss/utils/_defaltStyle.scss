@@ -1,20 +1,13 @@
 body {
   font-family: $ff-body;
   font-size: $fs-body;
-  color: $clr-neutral-100;
+  color: $clr-neutral-200;
 
   color-scheme: light dark;
-  color: $clr-accent-100;
-  background-color: $clr-neutral-100;
 }
-
-// color scheme
-@media (prefers-color-scheme: light) {
-  :root {
-    // color: $clr-neutral-100;
-    background-color: $clr-accent-100;
-  }
-} 
+html {
+  scroll-behavior: smooth;
+}
 
 /* Box sizing rules and Remove default margin*/
 *,

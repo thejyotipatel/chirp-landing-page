@@ -13,41 +13,196 @@
     <title class="title">Chirp.</title>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <h1 translate="no">Chirp.</h1>
+    <header class="main-header | bg-accent-200">
+      <div class="main-header-contant | container">
+        <div class="logo">
+          <h1 translate="no">Chirp.</h1>
+        </div>
+        <nav class="nav-links">
+          <ul role="list">
+            <li><a href="/">Home</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+          <button type="button" class="signin-btn">Sign in with Twitter</button>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="pricing">Pricing</a></li>
-          <li><a href="faq">FAQ</a></li>
-        </ul>
-        <button type="button" class="signin-btn">sign in with Twitter</button>
-      </nav>
     </header>
 
-    <main class="">
-      <section class="home" id="home">
+    <main class="bg-accent-200">
+      <section class="home | container" id="home">
         <div class="">
           <h1>Twitter analytics taken to a whole new level.</h1>
-          
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime
+            eius rem odio. Eveniet, praesentium consequatur ducimus nostrum quod
+            nisi Exercitationem.
+          </p>
+          <div class="btns">
+            <button type="button" class="signin-btn">
+              sign in with Twitter</button
+            ><button type="button" class="learn-more-btn">learn more -></button>
+          </div>
+          <div class="followers">
+            <img
+              src="./public/Assets/userAvatar06.svg"
+              alt="userAvatar06.svg"
+            />
+            <img
+              src="./public/Assets/userAvatar07.svg"
+              alt="userAvatar07.svg"
+            />
+            <img
+              src="./public/Assets/userAvatar08.svg"
+              alt="userAvatar08.svg"
+            />
+            <img
+              src="./public/Assets/userAvatar09.svg"
+              alt="userAvatar09.svg"
+            />
+            <img
+              src="./public/Assets/userAvatar01.svg"
+              alt="userAvatar01.svg"
+            />
+            <img
+              src="./public/Assets/userAvatar02.svg"
+              alt="userAvatar02.svg"
+            />
+            <img
+              src="./public/Assets/userAvatar03.svg"
+              alt="userAvatar03.svg"
+            />
+            <img
+              src="./public/Assets/userAvatar04.svg"
+              alt="userAvatar04.svg"
+            />
+            <img
+              src="./public/Assets/userAvatar05.svg"
+              alt="userAvatar05.svg"
+            />
+          </div>
+          <p class="followers-desc">
+            Jpon <span>198</span> others who have analyzed their followers and
+            scheduled <span>1342</span>tweets!
+          </p>
         </div>
-        <div class=""></div>
+        <div class="hero-images">
+          <img
+            src="./public/Assets/Hero Image (Desktop View).png"
+            width="300"
+            alt="Hero Image (Desktop View)"
+          />
+        </div>
       </section>
     </main>
 
-    <footer>
-      <div class="logo">
-        <h1 translate="no">Chirp.</h1>
+    <main class="bg-accent-100">
+      <section class="features | container" id="features">
+        <h1>Features that help you</h1>
+        <h1>Tweet smarter.</h1>
+        <div class="cards">
+          <div class="card">
+            <h2>analytica</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              vero ipsam provident repellendus nulla quasi sit deleniti vitae
+              ratione? Sapiente .
+            </p>
+          </div>
+          <div class="card">
+            <h2>smart analyzer</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              vero ipsam provident repellendus nulla quasi sit deleniti vitae
+              ratione? Sapiente .
+            </p>
+          </div>
+          <div class="card">
+            <h2>scheduled your tweets</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              vero ipsam provident repellendus nulla quasi sit deleniti vitae
+              ratione? Sapiente .
+            </p>
+          </div>
+          <div class="card">
+            <h2>dark mode</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              vero ipsam provident repellendus nulla quasi sit deleniti vitae
+              ratione? Sapiente .
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <main class="bg-primary-300">
+      <section class="faq | container" id="faq">
+        <h1>What our customers say</h1>
+        <div class="feq-contant">
+          <div class="faq-card">
+            <header>
+              <div class="profile">
+                <img src="" alt="" />
+                <p>sara may<span>@sara_may</span></p>
+              </div>
+              <img src="" alt="" />
+            </header>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+              dolore doloribus praesentium.
+            </p>
+            <div class="faq-card-footer">
+              <p>like<span>2</span></p>
+              <p>march 2, 2021</p>
+            </div>
+          </div>
+          <div class="faq-card"></div>
+          <div class="faq-card"></div>
+        </div>
+      </section>
+    </main>
+
+    <main class="bg-accent-200">
+      <section class="pricing | container" id="pricing">
+        <div class="pricing-header">
+          <h1>One simple price plan.</h1>
+          <p>
+            Start growing your Twitter accout by analyzing your follower's
+            patterns.
+          </p>
+        </div>
+        <div class="pricing-card">
+          <h2>Monthly</h2>
+          <h1>$9 <span>/mo</span></h1>
+          <hr />
+          <ul>
+            <li>Unlimaited* scheduled tweets and threads.</li>
+            <li>Schedule up to 3 weeks in advance.</li>
+            <li>Real-time audience analytica tracking up to 5k followers.</li>
+          </ul>
+          <hr />
+          <button type="button" class="signin-btn">
+            Start Trial with Twitter
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-primary-300">
+      <div class="footer-contant | container">
+        <div class="logo">
+          <h1 translate="no">Chirp.</h1>
+        </div>
+        <nav class="nav-links">
+          <ul role="list">
+            <!-- <li></li> -->
+            <li>Privacy police</li>
+            <li>terms of use</li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li></li>
-          <li>Privacy police</li>
-          <li>terms of use</li>
-        </ul>
-      </nav>
     </footer>
     <script type="module" src="/main.js"></script>
   </body>

@@ -1,12 +1,31 @@
 .main-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: $size-200;
-  .btns {
-    .nav-btn {
-      background-color: transparent;
-      text-transform: capitalize;
+  &-contant {
+    padding: $size-400 0;
+    .nav-links {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 40em) {
+  .main-header {
+    &-contant {
+      @include flex-jsb-aic;
+      .nav-links {
+        display: flex;
+        ul {
+          @include flex-jsb-aic;
+
+          li {
+            padding: 0 $size-200;
+            a {
+              font-size: $fs-200-1;
+              font-weight: $fw-500;
+              color: $clr-neutral-200;
+            }
+          }
+        }
+      }
     }
   }
 }
