@@ -1,7 +1,22 @@
 .main-header {
   &-contant {
     padding: $size-400 0;
+    @include flex-jSpace_between-aCenter;
     .nav-links {
+      display: none;
+    }
+    // mobile nav
+    .menu-btn {
+      display: block;
+      background-color: transparent;
+
+      .menu-icon {
+        fill: $clr-neutral-200;
+        width: 1em;
+        aspect-ratio: 1;
+      }
+    }
+    .nav-mobile-links {
       display: none;
     }
   }
@@ -10,7 +25,6 @@
 @media (min-width: 40em) {
   .main-header {
     &-contant {
-      @include flex-jSpace_between-aCenter;
       .nav-links {
         display: flex;
         ul {
@@ -25,6 +39,14 @@
             }
           }
         }
+      }
+
+      // mobile nav
+      .menu-btn {
+        display: none;
+      }
+      .nav-mobile-links {
+        display: none;
       }
     }
   }

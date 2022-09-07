@@ -141,7 +141,16 @@
   box-shadow: $bxs-300;
   font-size: $fs-200-1;
   font-weight: $fw-500;
+  display: flex;
+  gap: $size-100;
+  align-items: center;
   &:hover {
     background-color: $clr-primary-200;
   }
+}
+
+.icon {
+  fill: $clr-neutral-200;
+  width: 1em;
+  aspect-ratio: 1;
 }
