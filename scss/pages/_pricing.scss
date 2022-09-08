@@ -1,0 +1,46 @@
+main {
+  .pricing {
+    &-header {
+      text-align: center;
+      margin-bottom: $size-500;
+      h1 {
+        color: $clr-neutral-100;
+      }
+      p {
+        max-width: 600px;
+        margin-inline: auto;
+      }
+    }
+    &-card {
+      border: 0.08em solid $clr-accent-400;
+      border-radius: $btn-radius + 0.1rem;
+      padding: $size-500;
+      text-align: justify;
+      width: calc(min(100%, 500px));
+      margin-inline: auto;
+      h2 {
+        font-size: $fs-400;
+        font-weight: $fw-600;
+      }
+      h1 {
+        font-size: $fs-900;
+        font-weight: $fw-700;
+        color: $clr-neutral-100;
+        span {
+          color: $clr-neutral-200;
+          font-size: 1.5rem !important;
+          font-weight: $fw-600;
+        }
+      }
+      hr {
+        margin: $size-100 0;
+      }
+      .signin-btn {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
