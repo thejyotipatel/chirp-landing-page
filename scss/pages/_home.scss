@@ -16,6 +16,9 @@ main {
         font-weight: $fw-400;
         // max-width: calc(min(100%, 500px));
       }
+      .followers {
+        display: flex;
+      }
     }
     .hero-images {
       width: calc(min(90%, 450px));

@@ -1,0 +1,43 @@
+main {
+  .features {
+    h1 {
+      color: $clr-neutral-100;
+      line-height: 1.2;
+      margin-bottom: $size-200;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: $size-200;
+      .card {
+        border: 0.1em solid $clr-neutral-300;
+        border-radius: $btn-radius + 0.1rem;
+        padding: $size-200;
+        text-align: justify;
+
+        h2 {
+          font-size: $fs-200-1;
+          text-transform: capitalize;
+          font-weight: $fw-700;
+          margin: $size-100 0;
+          color: $clr-neutral-100;
+        }
+        p {
+          font-weight: $fw-400;
+          font-size: $fs-200;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 45em) {
+  main {
+    .features {
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}

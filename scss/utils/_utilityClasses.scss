@@ -129,9 +129,16 @@
 
 // container
 .container {
-  width: calc(min(92%, 1200px));
+  width: calc(min(90%, 1000px));
   margin-inline: auto;
   // border: $d-border;
+}
+
+.space-margin-top-bot {
+  margin: $size-900 0;
+}
+.space-padding-top-bot {
+  padding: $size-900 0;
 }
 // sign in button
 
