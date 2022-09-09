@@ -8,6 +8,7 @@ main {
       }
       p {
         max-width: 600px;
+        font-size: $fs-200-1;
         margin-inline: auto;
       }
     }
@@ -19,22 +20,40 @@ main {
       width: calc(min(100%, 500px));
       margin-inline: auto;
       h2 {
-        font-size: $fs-400;
-        font-weight: $fw-600;
+        font-size: $fs-300;
+        font-weight: $fw-500;
       }
       h1 {
+        line-height: 1;
         font-size: $fs-900;
         font-weight: $fw-700;
         color: $clr-neutral-100;
         span {
           color: $clr-neutral-200;
           font-size: 1.5rem !important;
-          font-weight: $fw-600;
+          font-weight: $fw-500;
         }
       }
       hr {
         margin: $size-100 0;
       }
+
+      ul {
+        margin: $size-200 0;
+        li {
+          counter-increment: checkmark;
+          margin: $size-100 $size-100 $size-100 0;
+          font-size: $fs-200;
+          display: flex;
+        }
+        li:before {
+          content: url('/public/Assets/Checkmark.svg');
+          font-size: $fs-100;
+          font-weight: $fs-400;
+          margin-right: $size-200;
+        }
+      }
+
       .signin-btn {
         width: 100%;
         display: flex;
