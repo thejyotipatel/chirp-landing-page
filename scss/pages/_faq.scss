@@ -48,20 +48,43 @@ main {
           text-transform: capitalize;
         }
       }
-      .faq-card:first-child,
+      .faq-card:first-child {
+        height: calc(min(85%, 250px));
+      }
       .faq-card:last-child {
-        height: calc(min(85%, 300px));
+        height: calc(min(100%, 250px));
       }
     }
   }
 }
 
-@media (min-width: 50em) {
+@media (min-width: 60em) {
   main {
     .faq {
       .feq-contant {
         grid-template-columns: repeat(3, 1fr);
         .faq-card {
+        }
+        .faq-card:first-child,
+        .faq-card:last-child {
+          height: calc(min(80%, 300px));
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 40em) {
+  main {
+    .faq {
+      .feq-contant {
+        grid-template-columns: repeat(1, 1fr);
+
+        .faq-card:first-child {
+          height: calc(min(100%, 300px));
+        }
+        .faq-card:last-child {
+          height: calc(min(100%, 300px));
         }
       }
     }

@@ -45,6 +45,12 @@ main {
       }
     }
     .hero-images {
+      &-1 {
+        display: block;
+      }
+      &-2 {
+        display: none;
+      }
     }
   }
 }
@@ -63,6 +69,27 @@ main {
         // width: calc(min(90%, 450px));
         order: -1;
         // margin: $size-400 0;
+        &-1 {
+          display: none;
+        }
+        &-2 {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 30em) {
+  main {
+    .home {
+      .hero-images {
+        &-1 {
+          display: block;
+        }
+        &-2 {
+          display: none;
+        }
       }
     }
   }
