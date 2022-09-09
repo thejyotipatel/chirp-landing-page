@@ -19,6 +19,7 @@ main {
       text-align: justify;
       width: calc(min(100%, 500px));
       margin-inline: auto;
+      box-shadow: $bxs-300;
       h2 {
         font-size: $fs-300;
         font-weight: $fw-500;
