@@ -2,7 +2,12 @@ main {
   .home {
     display: grid;
     // flex-direction: column-reverse;
+    gap: $size-800;
+    padding-bottom: $size-500;
+    grid-template-columns: repeat(2, 1fr);
     .page-intro {
+      margin-top: $size-500;
+      text-align: left;
       h1 {
         font-size: $fs-600;
         color: $clr-neutral-100;
@@ -15,26 +20,50 @@ main {
         color: $clr-neutral-200;
         font-weight: $fw-400;
         // max-width: calc(min(100%, 500px));
+        margin: $size-200 0;
       }
+
+      .btns {
+        display: flex;
+        gap: $size-300;
+        align-items: center;
+        .learn-more-btn {
+          padding: 0;
+          height: fit-content;
+          background-color: transparent;
+          color: $clr-primary-100;
+          font-weight: $fw-600;
+        }
+      }
+
       .followers {
         display: flex;
       }
+      .followers-desc {
+        width: calc(min(90%, 550px));
+        text-align: left;
+      }
     }
     .hero-images {
-      width: calc(min(90%, 450px));
     }
   }
 }
 
-@media (min-width: 50em) {
+@media (max-width: 50em) {
   main {
     .home {
-      display: grid;
-      grid-area: 'one' 'two';
-      // grid-template-columns: repeat(2, 1fr);
-      gap: 1em;
-      // justify-items: end;
-      // align-items: center;
+      gap: $size-500;
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+
+      .page-intro {
+        margin-top: 0;
+      }
+      .hero-images {
+        // width: calc(min(90%, 450px));
+        order: -1;
+        // margin: $size-400 0;
+      }
     }
   }
 }
