@@ -38,6 +38,17 @@ main {
 
       .followers {
         display: flex;
+        width: 40px;
+        margin: $size-200 0;
+
+        // translate img to left
+        $add: 0;
+        @for $var from 1 to 10 {
+          &-image:nth-child(#{$var}) {
+            transform: translateX(18px * $add);
+            $add: -$var;
+          }
+        }
       }
       .followers-desc {
         width: calc(min(90%, 550px));
