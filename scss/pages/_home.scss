@@ -29,10 +29,15 @@ main {
         align-items: center;
         .learn-more-btn {
           padding: 0;
+          display: flex;
+          align-items: center;
           height: fit-content;
           background-color: transparent;
           color: $clr-primary-100;
           font-weight: $fw-600;
+          span {
+            margin-left: $size-100;
+          }
         }
       }
 

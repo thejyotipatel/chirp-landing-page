@@ -1,6 +1,8 @@
 .main-header {
   &-contant {
     padding: $size-400 0;
+    // width: inherit;
+    // position: relative;
     @include flex-jSpace_between-aCenter;
     .nav-links {
       display: none;
@@ -16,12 +18,41 @@
         aspect-ratio: 1;
       }
     }
+
     .nav-mobile-links {
+      background-color: $clr-accent-100;
+      position: fixed;
       display: none;
+      top: $size-900;
+      right: $size-400;
+      box-shadow: $bxs-200;
+      border-radius: $btn-radius;
+
+      .nav-mobile {
+        width: 100%;
+        margin: $size-200;
+        padding: $size-200;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        ul {
+          text-align: center;
+        }
+        ul > li a {
+          color: $clr-neutral-200;
+          transition: $ts-400;
+        }
+        ul > li:first-child a {
+          color: $clr-neutral-100;
+        }
+        a:is(:hover, :focus-within) {
+          color: $clr-neutral-100;
+        }
+      }
     }
   }
 }
-
 @media (min-width: 40em) {
   .main-header {
     &-contant {
@@ -36,7 +67,14 @@
               font-size: $fs-200-1;
               font-weight: $fw-500;
               color: $clr-neutral-200;
+              transition: $ts-400;
             }
+            a:is(:hover, :focus-within) {
+              color: $clr-neutral-100;
+            }
+          }
+          li:first-child a {
+            color: $clr-neutral-100;
           }
         }
       }

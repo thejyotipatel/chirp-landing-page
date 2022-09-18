@@ -9,7 +9,11 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-
+    <!-- material icon link from node_modules folder -->
+    <link
+      rel="stylesheet"
+      href="/node_modules/material-icons/iconfont/material-icons.css"
+    />
     <title class="title">Chirp.</title>
   </head>
   <body>
@@ -20,9 +24,9 @@
         </div>
         <nav class="nav-links">
           <ul role="list">
-            <li><a href="/">Home</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#faq">FAQ</a></li>
+            <li><a class="link" href="#">Home</a></li>
+            <li><a class="link" href="#pricing">Pricing</a></li>
+            <li><a class="link" href="#faq">FAQ</a></li>
           </ul>
           <button type="button" class="signin-btn">
             <svg class="icon">
@@ -37,17 +41,19 @@
           </svg>
         </button>
         <nav class="nav-mobile-links">
-          <ul role="list">
-            <li><a href="/">Home</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#faq">FAQ</a></li>
-          </ul>
-          <button type="button" class="signin-btn">
-            <svg class="icon">
-              <use xlink:href="public/icons.svg#Twitter"></use>
-            </svg>
-            Sign in with Twitter
-          </button>
+          <div class="nav-mobile">
+            <ul role="list">
+              <li><a class="link" href="#">Home</a></li>
+              <li><a class="link" href="#pricing">Pricing</a></li>
+              <li><a class="link" href="#faq">FAQ</a></li>
+            </ul>
+            <button type="button" class="signin-btn">
+              <svg class="icon">
+                <use xlink:href="public/icons.svg#Twitter"></use>
+              </svg>
+              Sign in with Twitter
+            </button>
+          </div>
         </nav>
       </div>
     </header>
@@ -67,7 +73,10 @@
                 <use xlink:href="public/icons.svg#Twitter"></use>
               </svg>
               sign in with Twitter</button
-            ><button type="button" class="learn-more-btn">Learn more -></button>
+            ><button type="button" class="learn-more-btn">
+              Learn more
+              <span class="material-icons">trending_flat</span>
+            </button>
           </div>
           <div class="followers">
             <img
