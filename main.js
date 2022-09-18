@@ -4,11 +4,9 @@ const menuNavLink = document.querySelectorAll('.link')
 const navbarLink = document.querySelectorAll('.link')
 
 const toogleNav = () => {
-  // const menuDisplay = menuNav.className
   menuNav.style.display === 'none'
     ? (menuNav.style.display = 'flex')
     : (menuNav.style.display = 'none')
-  console.log('clack', menuNav.style.display)
 }
 
 menuBtn.addEventListener('click', toogleNav)
